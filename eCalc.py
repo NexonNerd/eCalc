@@ -1,7 +1,7 @@
-#
+#pyinstaller --onefile eCalc.py
 from math import pi
 import time
-v="2"
+v="2.1"
 eng={
     "plus":"+",
     "+":"+",
@@ -61,10 +61,10 @@ eng={
     "seventy":"70",
     "eighty":"80",
     "ninety":"90",
-    "hundred":"100",
-    "thousand":"1000",
-    "million":"10000",
-    "billion":"100000",
+    "hundred":"00",
+    "thousand":"000",
+    "million":"0000",
+    "billion":"00000",
     "and":".",
     "point":".",
     "dot":".",
@@ -82,7 +82,8 @@ while True:
     result=[]
     if x.lower() == "update log":
         print("\neCalc v"+v+"\nMade by twitch.tv/NexonNerd\n")
-        print("\nv2\nUpdate log command now works in full caps.\n Better spaced out results.\n Added time to see how long it took.\nCalculator now able to handle words it doesn't know.\nNow knows words: squared, cubed, \"0\", \"%\", and remainder.\nCalculator now knows how to do math for numbers over 9, nagative numbers, and decimals.\n")
+        print("v2: Update log command now works in full caps.\n Better spaced out results.\n Added time to see how long it took.\nCalculator now able to handle words it doesn't know.\nNow knows words: squared, cubed, \"0\", \"%\", and remainder.\nCalculator now knows how to do math for numbers over 9, nagative numbers, and decimals.\n")
+        print("v2.1: Fixed hundred giving weird number. Example: three hundred = 3100.")
         end=input("Press any key to go back.")
         continue
     for letter in x:
