@@ -1,7 +1,6 @@
-#pyinstaller --onefile eCalc.py
 from math import pi
 import time
-v="2.1"
+v="2.2"
 eng={
     "plus":"+",
     "+":"+",
@@ -78,12 +77,12 @@ while True:
     y=""
     x=input("\nUsing math, or just plain English, what do you want me to solve?: ")
     start=time.time()
-    code_to_test=""
     result=[]
     if x.lower() == "update log":
         print("\neCalc v"+v+"\nMade by twitch.tv/NexonNerd\n")
-        print("v2: Update log command now works in full caps.\n Better spaced out results.\n Added time to see how long it took.\nCalculator now able to handle words it doesn't know.\nNow knows words: squared, cubed, \"0\", \"%\", and remainder.\nCalculator now knows how to do math for numbers over 9, nagative numbers, and decimals.\n")
-        print("v2.1: Fixed hundred giving weird number. Example: three hundred = 3100.")
+        print("v2:\nUpdate log command now works in full caps.\nMade results feel more human.\nBetter spaced out results.\nAdded time to see how long it took.\nCalculator now able to handle words it doesn't know.\nNow knows words: squared, cubed, \"0\", \"%\", and remainder.\nCalculator now knows how to do math for numbers over 9, nagative numbers, and decimals.")
+        print("v2.1:\nFixed hundred giving weird number. Example: three hundred = 3100.")
+        print("v2.2:\nMade update log look better.")
         end=input("Press any key to go back.")
         continue
     for letter in x:
