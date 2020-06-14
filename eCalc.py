@@ -1,4 +1,3 @@
-from math import pi
 import time
 v="2.2"
 eng={
@@ -83,7 +82,8 @@ while True:
         print("v2:\nUpdate log command now works in full caps.\nMade results feel more human.\nBetter spaced out results.\nAdded time to see how long it took.\nCalculator now able to handle words it doesn't know.\nNow knows words: squared, cubed, \"0\", \"%\", and remainder.\nCalculator now knows how to do math for numbers over 9, nagative numbers, and decimals.")
         print("v2.1:\nFixed hundred giving weird number. Example: three hundred = 3100.")
         print("v2.2:\nMade update log look better.")
-        end=input("Press any key to go back.")
+        print("v2.3\nChanged the \"Press any key to go back.\" prompt to be more truthful.\nRemoved Herobrine.")
+        end=input("Press the enter key to go back.")
         continue
     for letter in x:
         if letter.isalpha()==True:
@@ -96,7 +96,7 @@ while True:
                 word="null"
             result.append(eng[word.lower()])
         done=str("".join(result))
-        print("\nThe answer is: "+str(eval(done)))
+        print("\n"+str(done)+"="+str(eval(done)))
         clock=time.time()-start
         print("\nThat took me "+str(clock)+" seconds to figure out!")
     except ZeroDivisionError:
